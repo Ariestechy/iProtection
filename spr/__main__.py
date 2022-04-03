@@ -84,8 +84,8 @@ async def help_parser(name, keyboard=None):
         )
     return (
         f"Hello {name}, I'm iProtectionRobot, I can protect "
-        + "your group from Spam and NSFW media using "
-        + "machine learning. Choose an option from below.",
+        + "your group from Spam messages and NSFW content media using "
+        + "machine learning. Join [spam logs](https://t.me/ilogs) Choose an option from below.",
         keyboard,
     )
 
@@ -100,8 +100,8 @@ async def help_button(client, query: CallbackQuery):
     u = query.from_user.mention
     top_text = (
         f"Hello {u}, I'm iProtectionRobot, I can protect "
-        + "your group from Spam and NSFW media using "
-        + "machine learning. Choose an option from below."
+        + "your group from Spam messages and NSFW content media using "
+        + "machine learning.Join [spam logs](https://t.me/ilogs).Choose an option from below."
     )
     if mod_match:
         module = mod_match.group(1)
